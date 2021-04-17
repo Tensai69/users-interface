@@ -1,0 +1,39 @@
+.users_container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 20px;
+}
+
+.users_container .user {
+    text-align: left;
+    flex: 1;
+    min-width: 25%;
+    max-width: calc(33.33% - 20px);
+    margin: 10px;
+}
+
+@media (max-width: 1000px) {
+    .users_container .user {
+        min-width: 35%;
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .users_container .user {
+        min-width: 60%;
+        max-width: calc(100% - 20px);
+    }
+}
+
+.users_container .user p {
+    text-align: left;
+}
+
+.users_container .user .action {
+    border-top: 1px solid;
+    display: flex;
+    justify-content: flex-end;
+}
+
